@@ -1,0 +1,6 @@
+<input #search class="search" type="text" (keydown.enter)="onSearch(search.value)" placeholder="Search...">
+<br>
+<br>
+<br>
+<ng2-smart-table [settings]="settings" (editConfirm)="onUpdateComfirm($event)" (createConfirm)="onCreateConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)" [source]="data"></ng2-smart-table>
+ 
